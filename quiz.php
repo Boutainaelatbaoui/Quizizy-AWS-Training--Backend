@@ -25,6 +25,3 @@ class Quizizy extends Connection
         print_r(file_put_contents("data.json", $encoded_quiz));
     }
 }
-
-$all_cities = new Quizizy();
-$cities = $all_cities->getData();

@@ -40,14 +40,6 @@
                <button class="answer" id="answer-2" data-id="2"></button>
                <button class="answer" id="answer-3" data-id="3"></button>
                <button class="answer" id="answer-4" data-id="4"></button>
-               <!-- <div class="answers-1">
-                    <button class="answer" id="answer-1" data-id="1"></button>
-                    <button class="answer" id="answer-2" data-id="2"></button>
-                </div>
-                <div class="answers-2">
-                    <button class="answer" id="answer-3" data-id="3"></button>
-                    <button class="answer" id="answer-4" data-id="4"></button>
-                </div> -->
             </div>
             <button class="next-btn" id="next">Next <i class="bi bi-chevron-double-right" id="chevron"></i></button>
          </div>
