@@ -5,7 +5,7 @@ class Quizizy extends Connection
 {
     public function getData()
     {
-        $sql = "SELECT q.id,q.question,q.explanation, 
+        $sql = "SELECT q.*, 
                 MIN(CASE WHEN o.id = (q.id*4)-3 THEN o.id END) AS id_1,
                 MIN(CASE WHEN o.id = (q.id*4)-3 THEN o.answer END) AS answer_1, 
                 MIN(CASE WHEN o.id = (q.id*4)-2 THEN o.id END) AS id_2,
@@ -25,3 +25,6 @@ class Quizizy extends Connection
         print_r(file_put_contents("data.json", $encoded_quiz));
     }
 }
+
+$quizizy = new Quizizy();
+$quiz = $quizizy -> getData();

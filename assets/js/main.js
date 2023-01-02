@@ -135,7 +135,7 @@ for (let i = 0; i < answer_list.length; i++) {
         document.getElementById("next").style.display    = "block";
         document.getElementById("answers").style.marginBottom  = "15px";
 
-        if(id == questions[index].response){
+        if(id == questions[index].correct){
             answer_list[i].classList.add("correct");
             score+=10;
             correct++;
@@ -145,7 +145,7 @@ for (let i = 0; i < answer_list.length; i++) {
             let obj = {};
             obj["question"]  = questions[index].question;
             obj["incorrect"] = questions[index]["answer_"+(i+1)];
-            obj["correct"]   = questions[index].option[questions[index].response-1];
+            obj["correct"]   = questions[index]["answer_"+(i+1)][questions[index].response-1];
             obj["detail"]    = questions[index].explanation;
             console.log(obj);
             array_quiz.push(obj);
