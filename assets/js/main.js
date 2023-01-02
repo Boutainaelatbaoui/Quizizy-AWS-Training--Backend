@@ -1,3 +1,13 @@
+
+var questions;
+async function getText(){
+    let myObject = await fetch("data.json");
+    let myText = await myObject.text();
+    questions = JSON.parse(myText);
+    
+}
+
+
 let question           = document.getElementById("quiz");
 let n_question         = document.getElementById("question-number");
 let answer_list        = Array.from(document.querySelectorAll(".answer"));
@@ -31,7 +41,9 @@ start.addEventListener("click", startQuiz);
 next.addEventListener("mouseover", nextButton);
 next.addEventListener("click", nextQuestion);
 
-function startQuiz(){
+async function startQuiz(){
+    await getText();
+    // console.log(questions[0].question);
     let username = document.getElementById("username-input").value;
     user_name    = username;
     document.getElementById("username").innerText = `Hello ${username}`;
@@ -82,10 +94,11 @@ function nextQuestion(){
 }
 
 function show() {
-    console.log(index);
-    question.innerText = `${question_num}. ${questions[index]['quest']}`;
+    // console.log(index);
+    question.innerText = `${question_num}. ${questions[index]['question']}`;
     for (let i = 0; i < answer_list.length; i++) {
-        answer_list[i].innerText = questions[index]['option'][i];
+        console.log(questions[index]["answer_"+(i+1)]);
+        answer_list[i].innerText = questions[index]["answer_"+(i+1)];
     }
     count++;
     question_num++;
@@ -130,8 +143,8 @@ for (let i = 0; i < answer_list.length; i++) {
         }
         else{
             let obj = {};
-            obj["question"]  = questions[index].quest;
-            obj["incorrect"] = questions[index]['option'][i];
+            obj["question"]  = questions[index].question;
+            obj["incorrect"] = questions[index]["answer_"+(i+1)];
             obj["correct"]   = questions[index].option[questions[index].response-1];
             obj["detail"]    = questions[index].explanation;
             console.log(obj);
