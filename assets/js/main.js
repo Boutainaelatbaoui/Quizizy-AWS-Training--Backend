@@ -1,6 +1,6 @@
 
 var questions;
-async function getText(){
+async function getData(){
     let myObject = await fetch("data.json");
     let myText = await myObject.text();
     questions = JSON.parse(myText);
@@ -42,7 +42,7 @@ next.addEventListener("mouseover", nextButton);
 next.addEventListener("click", nextQuestion);
 
 async function startQuiz(){
-    await getText();
+    await getData();
     // console.log(questions[0].question);
     let username = document.getElementById("username-input").value;
     user_name    = username;
@@ -145,7 +145,7 @@ for (let i = 0; i < answer_list.length; i++) {
             let obj = {};
             obj["question"]  = questions[index].question;
             obj["incorrect"] = questions[index]["answer_"+(i+1)];
-            obj["correct"]   = questions[index]["answer_"+(i+1)][questions[index].response-1];
+            obj["correct"]   = questions[index]["answer_"+questions[index]["correct"]];
             obj["detail"]    = questions[index].explanation;
             console.log(obj);
             array_quiz.push(obj);

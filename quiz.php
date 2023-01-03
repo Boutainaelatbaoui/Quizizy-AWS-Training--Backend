@@ -27,4 +27,4 @@ class Quizizy extends Connection
 }
 
 $quizizy = new Quizizy();
-$quiz = $quizizy -> getData();
+$quizizy -> getData();
