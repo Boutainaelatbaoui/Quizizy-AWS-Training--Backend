@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="assets/css/style.css" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
       <!-- ================== END core-css ================== -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    </head>
    <body>
       <div class="container" id="container">

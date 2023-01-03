@@ -31,6 +31,9 @@ $box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3p
     min-width: 200px;
     min-height: 40px;
     border-radius: 20px;
+    &:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
 }
 
 @mixin next-btn {
@@ -113,6 +116,8 @@ body{
     @include logo;
     display: flex;
     justify-content: center;
+    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
     @include breakpoints(mobile){
         font-size: 35px;
     }
@@ -350,6 +355,7 @@ body{
 
         &:hover{
             cursor: pointer;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
             background-color: #ffbf69;
             transition: 0.7s;
         }
@@ -361,21 +367,21 @@ body{
     }
 }
 
-@for $i from 1 through 2{
-    .answers-#{$i}{
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // gap: 5px;
-        // @include breakpoints(tablet){
-        //     flex-direction: column;
-        // }
-        // @include breakpoints(mobile){
-        //     flex-direction: column;
-        // }
-    }
+// @for $i from 1 through 2{
+//     .answers-#{$i}{
+//         // display: flex;
+//         // justify-content: center;
+//         // align-items: center;
+//         // gap: 5px;
+//         // @include breakpoints(tablet){
+//         //     flex-direction: column;
+//         // }
+//         // @include breakpoints(mobile){
+//         //     flex-direction: column;
+//         // }
+//     }
     
-}
+// }
 
 .correct{
     background-color: $correct-color !important;
