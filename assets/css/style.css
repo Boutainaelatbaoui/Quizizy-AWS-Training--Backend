@@ -83,6 +83,7 @@ body {
   .container {
     width: 90%;
     height: auto;
+    margin-top: 80px;
   }
 }
 
@@ -241,7 +242,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
 }
 
