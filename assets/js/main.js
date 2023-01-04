@@ -74,6 +74,8 @@ function nextQuestion(){
     for (let i = 0; i < answer_list.length; i++){
         answer_list[i].classList.remove("correct");
         answer_list[i].classList.remove("wrong");
+        answer_list[i].classList.remove("correct-animation");
+        answer_list[i].classList.remove("wrong-animation");
         answer_list[i].disabled = false; 
     }
 
@@ -137,6 +139,7 @@ for (let i = 0; i < answer_list.length; i++) {
 
         if(id == questions[index].correct){
             answer_list[i].classList.add("correct");
+            answer_list[i].classList.add("correct-animation");
             score+=10;
             correct++;
             // console.log("correct: " + correct);
@@ -151,6 +154,7 @@ for (let i = 0; i < answer_list.length; i++) {
             array_quiz.push(obj);
             
             answer_list[i].classList.add("wrong");
+            answer_list[i].classList.add("wrong-animation");
             wrong++;
             // console.log("wrong: " + wrong);
         }

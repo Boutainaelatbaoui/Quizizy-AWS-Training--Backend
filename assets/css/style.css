@@ -190,8 +190,8 @@ body {
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .btn:hover {
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .btn:hover {
   cursor: pointer;
@@ -370,6 +370,9 @@ body {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
+#answer-1:disabled {
+  color: aliceblue !important;
+}
 
 .answer-1 {
   margin-right: 25px;
@@ -399,6 +402,9 @@ body {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
+#answer-2:disabled {
+  color: aliceblue !important;
+}
 
 #answer-3 {
   margin-bottom: 15px;
@@ -423,6 +429,9 @@ body {
   background-color: #ffbf69;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+}
+#answer-3:disabled {
+  color: aliceblue !important;
 }
 
 .answer-3 {
@@ -453,6 +462,9 @@ body {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
+#answer-4:disabled {
+  color: aliceblue !important;
+}
 
 .correct {
   background-color: #27a300 !important;
@@ -480,11 +492,15 @@ body {
   margin-bottom: 70px;
   min-height: 60px;
   font-size: 23px;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   display: none;
 }
 .next-btn:hover {
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 @media (min-width: 768px) and (max-width: 1120px) {
   .next-btn {
@@ -619,8 +635,8 @@ body {
   font-size: 23px;
 }
 .feedback-btn:hover {
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 @media (min-width: 768px) and (max-width: 1120px) {
   .feedback-btn {
@@ -658,8 +674,8 @@ body {
   font-size: 23px;
 }
 .play-again-btn:hover {
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 @media (min-width: 768px) and (max-width: 1120px) {
   .play-again-btn {
@@ -802,6 +818,10 @@ body {
   margin-bottom: 70px;
   min-height: 60px;
   font-size: 23px;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,8 +833,8 @@ body {
           align-items: center;
 }
 .previous-btn:hover {
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 @media (min-width: 768px) and (max-width: 1120px) {
   .previous-btn {
@@ -837,4 +857,18 @@ body {
 
 .no-feedback {
   text-align: center;
+}
+
+.wrong-animation {
+  -webkit-animation: headShake !important;
+          animation: headShake !important;
+  -webkit-animation-duration: 1s !important;
+          animation-duration: 1s !important;
+}
+
+.correct-animation {
+  -webkit-animation: pulse !important;
+          animation: pulse !important;
+  -webkit-animation-duration: 1s !important;
+          animation-duration: 1s !important;
 }

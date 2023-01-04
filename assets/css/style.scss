@@ -32,7 +32,7 @@ $box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3p
     min-height: 40px;
     border-radius: 20px;
     &:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
 }
 
@@ -45,6 +45,8 @@ $box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3p
     margin-bottom: 70px;
     min-height: 60px;
     font-size: 23px;
+    animation: fadeIn;
+    animation-duration: 1s;
 
     @include breakpoints(tablet){
         min-height: 59px;
@@ -359,6 +361,10 @@ body{
             background-color: #ffbf69;
             transition: 0.7s;
         }
+
+        &:disabled{
+            color: aliceblue !important;
+        }
     }
     @if $i%2 != 0{
         .answer-#{$i}{
@@ -577,4 +583,14 @@ body{
 
 .no-feedback{
     text-align: center;
+}
+
+.wrong-animation{
+    animation: headShake !important;
+    animation-duration: 1s !important;
+}
+
+.correct-animation{
+    animation: pulse !important;
+    animation-duration: 1s !important;
 }
