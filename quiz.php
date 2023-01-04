@@ -18,7 +18,7 @@ class Quizizy extends Connection
         // print_r(json_encode($result));
         $encoded_quiz = json_encode($result);
         file_put_contents("./assets/js/data.json", $encoded_quiz);
-        print_r(file_put_contents("data.json", $encoded_quiz));
+        // print_r(file_put_contents("data.json", $encoded_quiz));
     }
 }
 
