@@ -7,7 +7,6 @@ async function getData(){
     
 }
 
-
 let question           = document.getElementById("quiz");
 let n_question         = document.getElementById("question-number");
 let answer_list        = Array.from(document.querySelectorAll(".answer"));

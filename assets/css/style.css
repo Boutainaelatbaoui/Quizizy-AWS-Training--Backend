@@ -231,7 +231,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
 }
 @media (max-width: 767px) {
