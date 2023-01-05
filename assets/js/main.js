@@ -2,6 +2,7 @@
 var questions;
 async function getData(){
     let myObject = await fetch("data.json");
+    console.log(myObject);
     let myText = await myObject.text();
     questions = JSON.parse(myText);
     
@@ -65,6 +66,7 @@ function nextButton(){
     document.getElementById("chevron").style.display    = "inline";
 
 }
+
 function nextQuestion(){
     document.getElementById("next").style.display    = "none";
     document.getElementById("chevron").style.display    = "none";
